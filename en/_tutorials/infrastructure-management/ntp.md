@@ -15,7 +15,7 @@ The VM time is synced to correctly work with other servers and applications, pro
 
 NTP servers recommended for syncing:
 * `ntp0.NL.net`
-* `ntp2.vniiftri.ru`
+* `time.cloudflare.com`
 * `ntp.ix.ru`
 * `ntps1-1.cs.tu-berlin.de`
 
@@ -74,7 +74,7 @@ The cost of clock synchronization using NTP includes fees for computing resource
 
 
       ```text
-      FallbackNTP=ntp0.NL.net ntp2.vniiftri.ru ntp.ix.ru ntps1-0.eecsit.tu-berlin.de
+      FallbackNTP=ntp0.NL.net time.cloudflare.com ntp.ix.ru ntps1-0.eecsit.tu-berlin.de
       ```
 
 
@@ -126,7 +126,7 @@ The cost of clock synchronization using NTP includes fees for computing resource
       # server 2.ubuntu.pool.ntp.org
       # server 3.ubuntu.pool.ntp.org
       server ntp0.NL.net
-      server ntp2.vniiftri.ru
+      server time.cloudflare.com
       server ntp.ix.ru
       server ntps1-0.eecsit.tu-berlin.de
       ```
@@ -161,7 +161,7 @@ The cost of clock synchronization using NTP includes fees for computing resource
 
 
       ```powershell
-      w32tm /config /syncfromflags:manual /manualpeerlist:"ntp0.NL.net ntp2.vniiftri.ru ntp.ix.ru ntps1-0.eecsit.tu-berlin.de"
+      w32tm /config /syncfromflags:manual /manualpeerlist:"ntp0.NL.net time.cloudflare.com ntp.ix.ru ntps1-0.eecsit.tu-berlin.de"
       ```
 
 
@@ -257,7 +257,7 @@ The cost of clock synchronization using NTP includes fees for computing resource
    ...
    [TimeProviders]
    ...
-   NtpServer: ntp0.NL.net ntp2.vniiftri.ru ntp.ix.ru ntps1-0.eecsit.tu-berlin.de (Local)
+   NtpServer: ntp0.NL.net time.cloudflare.com ntp.ix.ru ntps1-0.eecsit.tu-berlin.de (Local)
    ...
    ```
 
